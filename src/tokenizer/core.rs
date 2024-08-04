@@ -18,6 +18,11 @@ pub trait Tokenizer<'a> {
     fn tokenize(&'a self) -> Vec<&str>;
 }
 
+pub trait StringTokenizer<'a> {
+    fn new(text: &'a str) -> Self;
+    fn tokenize(&'a self) -> Vec<String>;
+}
+
 pub trait FullTokenizer<'a> {
     fn new(text: &'a str) -> Self;
     fn word_split(&'a self) -> Vec<&str>;

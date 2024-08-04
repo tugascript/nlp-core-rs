@@ -33,3 +33,5 @@ By default this library will only support the English language, but generic impl
 - POS Tagging:
   - [ ] Brill Tagger
   - [ ] Classifier Tagger
+
+  The implementation of this library is based on the NLTK book found (here)[https://www.nltk.org/book/]
